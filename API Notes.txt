@@ -1,0 +1,313 @@
+What is API ?
+Application Programming Interface, that connect two application with the help of api to connect with each other.
+intermediate application.
+
+
+* Any website or app contains 3 layers :
+	1- Presentation Layer "UI" user interface layer."front End"
+	2-Application Layer."Web Server" "contains the images and some methods for the app"
+	3- Data Base Layer, all the info stored as a table
+
+
+how many types of API?
+1- internal API 
+2- Partner API
+
+What tool do you use to test API ?
+Postman tool.
+
+## in API we do not write codes we send requests.
+
+What is Agile?   
+is a method where the software is divided into multiple portions or small small parts 
+and each part is developed and tested and sent to the client.
+
+
+When I divid the total time into a smaller timeframe and within a smaller timeframe 
+we develop and test the small parts and make working software and send it to the client  this process called Agile Scrum.
+
+Agile Scrum follows 3-5-3 rules
+	1. 3 rules: a-P.O or B.A  b- Scrum Master c- Development team"developer and testers"
+	2. 5 meetings: a- Grooming Meeting b- Sprint Planning Meeting c-Daily Stand Up
+		d- Sprint Review Meeting e- Retrospective Meeting (PI Planning Meeting , Defect Triage Meeting, QA SignOff 				Meeting , Release Planning Meeting)
+	3. 3 Artifact : a- Product Backlog  b- Sprint Backlog  c- Release Backlog
+
+
+What do we do in Grooming meeting?
+we analyze stories, periortize size.
+
+What we do in Sprint Planning Meeting?
+we discuss what are stories are picked for the upcoming sprint.
+
+What we get asked in Stand Up Meeting?
+What did I do yesterday , What I am going to do today and is there is any difficulties Facing me"blockers or stopers"
+
+
+Who is the owner of ProductBacklog?
+P.O or B.A
+
+
+Who is the owner of Sprint Backlog?
+Developing team ."Developer and testers.
+
+## After Grooming Meeting we get Product Backlog , After Sprint Planning Meeting we get Sprint Backlog
+
+Kanban: there is no timeframe, we only divid the application into small small parts and build together"means build and test".
+
+
+
+
+Who give us stories?
+B.A OR P.O 
+
+
+Epic is a large requirement by the Client, P.O and B.A will divid the requirment tnto a smaller requirments.
+each small requirment called a story.
+under one Epic we get many stories.
+
+
+Who works on stories day by day?
+developers and testers.
+
+Who helps developer and testers daily ?
+test lead , developer lead, delivery manager, tech team,scrum muster, P.O and B.A
+
+where do they keep stories?
+in Backlog.
+
+
+Who explains stories?
+P.O and B.A
+
+Who ask questions about the stories?
+the whole team.
+
+
+What is the name of the meeting that the team can ask questions about the stories?
+Grooming meeting, 
+
+
+What is the story point in Jira?
+it means Time and effort, what time and effort do you need.
+
+
+What is sprint planning meeting?
+the meeting that we decied which story we will be working in the next sprint.
+or how many sprints we will work in the next sprint.
+
+
+
+What ever we test "API or UI" we must test DataBase too.
+
+
+
+When the points number is higher it means the sory needs more time and effort.
+
+
+
+Developers and Testers are the ones who decide the # of points per a story.
+
+
+
+The Swagger Documents are given by the developer.
+
+
+Testers should get the Swagger Documents before they stert working.
+
+
+Where do we Execute Test cases?
+In Postman
+
+
+API testing process?
+1. analyze the story
+2. analyzing the ac
+3.analyze Swagger doc
+4.analyze mapping doc
+5. writing test senarios and test cases
+6. creating test data environmnent/set up the environment 
+7. in our environment we execute test cases.
+
+
+
+
+What is the flow ?
+Api, web server, Database server.
+
+
+What are the components to send a post request?
+1. Endpoints (URL"Unified Resource Locator" when we use UI 
+	.../ URI "Unified Resource Identifier" when postman acts like UI" invisible for users")
+2. Headers (Athorization)
+3.Body (Pay Load)
+
+
+#########Why do we use environment variable is poatman?########
+so if the baseURL changes we save time by change it once, so we change it in the environment that will be reflected in all of the request
+
+
+What is the BaseURL?
+the url address that repeated in all the urls.
+after the BaseURL before the ? that portion calls Path Parameter
+after the ? calls Query Parameter
+
+
+
+What API I use?
+Rest(Architecture API) or Restful API "is test API using Postman
+SOAP is an API but it is a protocol"follows some rules"
+
+
+What is the different between API that uses internet and without?
+Webservice used internet. all Web Service is API
+, not all API is webservice
+API is two types : over the internet and without internet.
+
+
+What is API testing?
+Testing the core business logic is API Testing, we send a request from a client like Postman and we receive response
+from the server.
+
+
+We call API Business Logic.
+
+
+
+What is API Integrations?
+API Integrations are softwares components that automatically update data between clients and server.
+
+
+Endpoint VS API?
+they are not the same thing,
+Endpoint is a component of API.
+API is a set of rules that allows two applications to share the same resources.
+Endpoints are the location of the resources.
+API uses Endpoint's URL to retrieve the requested resources.
+
+
+
+What is Header?
+Extra source of information for each API call / API request / http request / HTTP Method
+when user create an API, he adds some particular key and value should be added to each of the call/request
+to get API to response like API Keys and Language , like Application Json , cashes , cookies and Project Information. 
+
+
+
+What is Body?
+When we need to send Data to the API, we send it as request body such as Post , Put we use body to send the resource.
+
+
+201 we say 2not1
+so 0 is not
+
+
+What is Health Check in API?
+to check the minimum viable Health of API, we can send a Get request that response back if the server is available.
+
+
+
+What are the HTTP Methods that we use for an API?
+GET :retrieve resource
+POST : creates a resource
+PUT : update an exsisting resource
+PATCH : update a partial resource
+DELETE : remove a resource
+
+
+Difference between PUT and PATCH?
+Put will update  the whole thing
+PATCH will update a patial data
+
+
+
+##Json is Java Script Object Notation
+
+
+
+						2xx = successful
+			200 -- Successfully OK
+			201 -- Successfully Created
+			204 -- Successfully Connected but the content is not available 
+
+
+						4xx = Unsuccessful because of the request error
+			400 -- Very Very Very bad request
+			401 -- Unothorized "Invalid Authorization"
+			404 -- Requested Resource not found "problem with the path parameter"
+
+						5xx = Problem with the server Level
+			500 -- Server Error "entered into the server but server has some problems to handle/process my request"
+			501 -- Getway Timout "tried to connect with the server ..and at one point it returns Gateway Timeout"
+			
+
+
+### What do we validate in API?
+1- we validate data code
+2- we validate statues String (ok, created, very bad request)
+3- if we need to validate any particular String
+4- We validate Feild and Value
+5- Checking response header content type
+6- Check if the response time is less that 200ms
+
+
+
+
+					Reqress Collection Tests
+	A. List Users "Get Method"
+		1- Test Case 001 - Verify that the user get 200 response in a Get Method
+		2- Test Case 001 - Verify that the status code name has String OK
+		3- Test Case 003 - Verify that length of users of page2 is 6
+		4- Test Case 004 - Verify that the user in page2
+		5- Test Case 005 - Verify that Byron is included in my string Byron
+		6- Test Case 006 - Verify that Content Type is Present
+		7- Test Case 007 - Response time is less than 200ms
+		8- Test Case 008 - Verify that the response time is less that 200ms
+
+
+	B. Create "Post Method"
+		1- Test Case 101 - Verify that the user gets 201 response in a Post Method
+		2- Test Case 101 - Verify that the status code name has String Created
+		3- Test Case 103 - Verify that morpheus is included in my string
+		4- Test Case 104 - Verify that Content Type is Present
+		5- Test Case 105 - "Verify that the response time is less that 500ms
+		6- Test Case 106 - Verify that the key job got value of leader
+		
+
+
+
+My API Key for NewsAPI.org is :  f262b475d8a24ccca7a035e839fb2b88
+
+
+
+## There are didderent types of Authentications:
+		1. Basic Authentication
+		2. API Key" 
+		3. Bearer Token
+		4. OAuth2 (Open Authorization),(Two Factor Authorization)or ( Two Step Verification)
+
+
+
+				
+				REST ASSURED 
+Jackson Databind .. it helps to serialize and deserialize
+	when we convert Java to JSon .. serialize
+			    JSon to Java .. deserialize
+
+
+Why do we use Hamcrest library?
+to validate out response .. has item,eqial to ,, these methods came from Hamcrest.
+
+
+
+Why do we need Testng ?
+to be able to use @Test class
+
+
+
+under Java we need to create three folder :
+	1- Feature
+	2- Step Definition
+	3- Runner 
+
+
+

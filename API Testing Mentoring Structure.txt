@@ -1,0 +1,27 @@
+
+
+Book API --- you need to send one Get, POST, PUT Request, If possible Delete request      .... done 
+
+             You need to create Environment Variable (local and Global) and apply those in your request  ... done  
+             
+             You need to apply data driven testing approach (Farzana will show you) ... 
+             
+             Explain header, Payload, status codes and difference between status codes specially (204 vs 404) ... theoretical part ... done 
+             
+             Explain between put VS patch  ... done 
+   
+             Different types of authentication --- Explain basic, API Key , bearer, OAuth2 .. done 
+
+             
+             How do you extract and validate your response (extract Json online evaluator), and how to validate in Postman using Test utility .. json path finder
+
+             What are the validation we do? Answer.... We do validate status code, status text, response size, response string validation, int validation, null or not null validation bla bla bla .....
+
+           ---------------------------------------------------------------------------------------------------------------------------------  
+                                                                  Automation
+Rest Assured -- With Postman Workspace ... One get method and one Post Method including validation (Please follow the previous mentoring sessions.)
+
+            
+            
+             
+             

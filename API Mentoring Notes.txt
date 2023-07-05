@@ -1,0 +1,171 @@
+What is API ?
+	API is a programming language that connect two applications with the help of API two applications can talk to each other.
+
+
+What do we test in API ?
+
+
+
+Which language is used to write API ?
+NodeJS
+
+
+
+What they do with NodeJS?
+They are routing the request and sending the response to the client 
+
+
+
+Who develop API ?
+API Developer
+
+
+
+Who test API ?
+API Tester
+
+
+
+What tool do we use to test API ?
+Postman
+
+
+
+When developer develops API ? What they provide to the tester for testing?
+testers get an endpoint or address to test.
+
+
+API Testing process :
+	1. Analyzing the story
+	2. Analyzing the A/C
+	3. Analyzing the Swagger Doc
+	4. Analyzing the mapping Doc
+	5. Writing test scenarios and test cases
+	6. Creating test data/set up environment
+	7. Once we get the build in our environment, we excute test cases.
+
+
+
+What are the component to send a post request?
+1. Endpoint / URL 
+2. Headers "Authorization"
+3. Body "Payload"
+
+
+Example of URl :
+BaseURL-Path Parameter"folder" ? query Parameter "filtering"
+
+
+
+What API you used?
+Rest "Architecture" API or Restfull API
+
+
+SOAP is also an API but it is a protocol "Rules"
+
+
+
+What are the types of API?
+1. Public API 
+2. Parameter API 
+3. Internal API 
+
+
+
+What is Header?
+extra source of information for each API call
+When developers create an API, he adds some particular key and value 
+that needs to be added to each req to get the server response
+Language JSon , Cashes , Cookies and Project Info
+
+
+
+What is Body?
+When we need to send Data to the API, we send it as a request body like POST and PUT to send the resource
+
+
+
+WHat is Payload?
+The data the we send from Post request.
+The data that we send in a post req in a response body we send and receive Payload
+
+
+
+
+What is Health Check in API?
+To check the minimum variable health of API, we can send a GET request that respond back if the server available.
+
+
+What are the HTTP requests you used for an API?
+GET
+POST
+PUT
+PATCH
+DELETE
+
+
+
+
+Deference between Put and Patch?
+PUT: is a technique that Update the whole resource
+Patch : is to change a particular resource.
+
+
+
+			2XX Series -- Successful
+		200 -- Successfully OK
+		201 -- Successfully Created
+		204 -- Successfully Connected but no Content Available
+
+			4XX Series -- Unsuccessful because of the request error
+		400 -- Very Bad Request
+		401 -- Unouthorized Request
+		404 -- Requested Resource not found "problem with Path Parameter"
+
+			5XX series -- Problem With The Server Level
+		500 -- Server Error "entered the server but the server has some problems handling the request"
+		504 -- Getway Timeout "tried to connected with the server and at one point it returns getway timout"
+
+
+
+
+### What do we validate in API?
+1- we validate data code
+2- we validate statues String (ok, created, very bad request)
+3- if we need to validate any particular String
+4- We validate Feild and Value
+5- Checking response header content type
+6- Check if the response time is less that 200ms
+
+
+
+
+
+					Reqress Collection Tests
+	A. List Users "Get Method"
+		1- Test Case 001 - Verify that the user get 200 response in a Get Method
+		2- Test Case 001 - Verify that the status code name has String OK
+		3- Test Case 003 - Verify that length of users of page2 is 6
+		4- Test Case 004 - Verify that the user in page2
+		5- Test Case 005 - Verify that Byron is included in my string Byron
+		6- Test Case 006 - Verify that Content Type is Present
+		7- Test Case 007 - Response time is less than 200ms
+		8- Test Case 008 - Verify that the response time is less that 200ms
+		
+
+
+
+
+
+
+my API Key:  f262b475d8a24ccca7a035e839fb2b88
+
+
+
+There are different authentecation :
+1. Basic Authentication
+2. API Key
+3. Bearer Token
+4. OAuth2 (Open Authorization 2) (two factor authorization, 2 step verifavation)
+
+
